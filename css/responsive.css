@@ -1,7 +1,3 @@
-@media screen and (max-width: 2000px) {
-
-}
-
 @media screen and (max-width: 1760px) {
 	.wrapper {
 		max-width: 140rem;
@@ -34,7 +30,7 @@
 	}
 
 	.navbar__link {
-		font-size: 2.4rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -73,7 +69,7 @@
 	}
 
 	.navbar__link {
-		font-size: 2rem;
+		font-size: 1.25rem;
 	}
 
 	.go  {
@@ -106,10 +102,10 @@
 	}
 
 	.navbar__link {
-		font-size: 2rem;
+		font-size: 1.25rem;
 	}
 	.navbar__link:not(:last-child) {
-		margin-right: 1em;
+		margin-right: 2em;
 	}
 
 	.project__heading {
@@ -196,7 +192,7 @@
 	}
 
 	.navbar__link {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.navbar__link:not(:last-child) {
@@ -224,5 +220,141 @@
 	.project__img {
 		height: 24rem;
 		width: 40rem;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.wrapper {
+		max-width: 54rem;
+	}
+
+	.navbar__link:not(:last-child) {
+		margin: 0;
+		margin-bottom: 1em;
+	}
+
+	.project__heading {
+		margin-bottom: 2rem;
+		font-size: 2rem;
+	}
+
+	.project__summary {
+		margin-bottom: 2rem;
+		font-size: 3rem;
+	}
+
+	.project__img {
+		width: 36rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.wrapper {
+		margin: 0 4rem;
+		max-width: 100%;
+	}
+
+	.header__brand {
+		height: 4rem;
+	}
+
+	.navbar-toggle {
+		font-size: 3rem;
+	}
+	.navbar__link {
+		font-size: 3rem;
+	}
+
+	.heading-primary {
+		font-size: 4rem
+	}
+	.heading-secondary {
+		font-size: 3rem;
+	}
+
+	.go  {
+		padding: 4rem;
+	}
+	.go img {
+		height: 2rem;
+	}
+
+	.project__img {
+		height: 24rem;
+		width: 32rem;
+	}
+
+	.social__link {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+	.social__link:not(:last-child) {
+		margin-right: 4rem;
+	}
+
+	.copyright {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 1rem 3rem;
+	}
+
+	.heading-primary {
+		font-size: 3rem
+	}
+	.heading-secondary {
+		font-size: 2.4rem;
+	}
+
+	.project__heading {
+		margin-bottom: 1rem;
+		font-size: 1.8rem;
+	}
+	.project__summary {
+		font-size: 2rem;
+	}
+	.project__img {
+		width: 28rem;
+	}
+
+	.social__link:not(:last-child) {
+		margin-right: 3rem;
+	}
+
+	.copyright {
+		font-size: .8rem;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.wrapper {
+		margin: 0 2rem;
+		max-width: 100%;
+	}
+
+	.heading-primary {
+		font-size: 2.4rem
+	}
+	.heading-secondary {
+		font-size: 2rem;
+	}
+
+	.navbar__link {
+		font-size: 3rem;
+	}
+
+	.project__heading {
+		font-size: 1.2rem;
+	}
+	.project__summary {
+		font-size: 1.6rem;
+	}
+
+	.project__img {
+		height: 18rem;
+		width: 24rem;
 	}
 }

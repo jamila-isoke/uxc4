@@ -3,10 +3,10 @@
 :root {
 	/* TIMINGS FOR FIRST ANIMATION */
 	--animation-length-before: 1.5s;
-	--animation-delay-before: 1s;
+	--animation-delay-before: 0s;
 
 	/* TIMINGS FOR SECOND ANIMATION */
-	--animation-length-after: 1s;
+	--animation-length-after: 2s;
 	--animation-delay-after: calc(
 		.5s + var(--animation-delay-before) + var(--animation-length-before)
 	);
@@ -68,9 +68,10 @@ body {
 	width: 100%;
 	height: 100%;
 	font-size: 10rem;
+	font-weight: 700;
 	line-height: .9;
 	white-space: pre-line;
-	margin-top: -1em;
+	margin-top: -0.5em;
 }
 
 .heading-secondary {
@@ -81,7 +82,7 @@ body {
 	height: 100%;
 	font-size: 6rem;
 	font-weight: 700;
-	margin-top: -1em;
+	margin-top: 1em;
 	white-space: pre-line;
 }
 
@@ -135,6 +136,7 @@ body {
 	margin-right: auto;
 	height: 10rem;
 	width: auto;
+	z-index: 1;
 }
 
 .header__brand img {
@@ -147,15 +149,13 @@ body {
 .navbar {
 	position: relative;
 	display: flex;
+	/* margin-left: auto; */
 	align-items: center;
 	justify-content: center;
 }
 
-.navbar.open {
-}
-
 .navbar-toggle {
-	font-size: 5rem;
+	font-size: 3rem;
 	z-index: 1;
 }
 
@@ -189,7 +189,7 @@ body {
 	margin-bottom: auto;
 }
 
-.go {
+/* .go {
 	position: absolute;
 	bottom: 0;
 	padding: 10rem;
@@ -198,7 +198,7 @@ body {
 .go img {
 	height: 5rem;
 	width: auto;
-}
+} */
 
 /* PROJECT SECTIONS */
 
@@ -248,8 +248,15 @@ body {
 	flex-direction: column;
 	position: relative;
 	height: auto;
-	padding: 10rem 0;
+	padding: 6rem 0;
 	background-color: var(--palette-7);
+}
+
+/* CONTACT */
+.contact {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	white-space: pre-line;
 }
 
 /* SOCIAL MEDIA */
@@ -258,19 +265,17 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 4rem;
 	margin-bottom: 4rem;
 }
 
 .social > :not(:last-child) {
-	margin-right: 6rem;
+	margin-right: 3rem;
 }
 
 .social__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 4rem;
-	height: 4rem;
+	width: 3rem;
+	height: 3rem;
 }
 
 .social__link img {
@@ -279,7 +284,7 @@ body {
 }
 
 .copyright {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 }
 
@@ -299,16 +304,16 @@ body {
 
 /* INDIVIDUAL PROJECT BACKGROUNDS */
 
-#aer-studios {
+#project__1 {
 	background-color: var(--palette-1);
 }
-#fest-series {
+#project__2 {
 	background-color: var(--palette-2);
 }
-#nexx-ting {
+#project__3 {
 	background-color: var(--palette-3);
 }
-#moveon {
+#project__4 {
 	background-color: var(--palette-4);
 }
 
