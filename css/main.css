@@ -1,3 +1,9 @@
+/* CALLING IN OTHER CSS FILES */
+
+@import url("css/reset.css");
+
+@import url("css/responsive.css");
+
 /* GLOBAL VARIABLES */
 
 :root {
@@ -157,6 +163,7 @@ body {
 .navbar-toggle {
 	font-size: 3rem;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .navbar__link {
@@ -207,6 +214,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	color: var(--palette-6);
+	height: auto;
+	width: 100%;
 }
 
 .project__text {
